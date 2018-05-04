@@ -17,6 +17,10 @@ def get_rect_color():
     return (255, 0, 0)
 
 while True:
+    event = pygame.event.poll()
+    if event.type == pygame.QUIT:
+        break
+    screen.fill(daylight(500))
 
     pygame.draw.rect(screen, get_rect_color(), (50, 50, 100, 100))
 
