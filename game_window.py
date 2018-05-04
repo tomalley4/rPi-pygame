@@ -18,6 +18,7 @@ def get_rect_color():
 
 while True:
     event = pygame.event.poll()
+    blat = 'afjweoiawefjoiaefw'
     if event.type == pygame.QUIT:
         break
     screen.fill(daylight(500))
